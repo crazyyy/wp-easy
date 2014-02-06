@@ -1,0 +1,323 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border-left"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 4946,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"subl",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"colo",
+				"BracketHighlighter: Toggle Global Enable"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 209.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/main.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/addcomments.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/css/engine.css",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/css/style.css",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/css/dle-styles.css",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/search.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/searchresult.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-andr.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-app.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-android.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-book.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-game.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-obzor.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory-symb.tpl",
+		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/comments.tpl",
+		"/C/OpenServer/domains/dle.me/templates/smartmobile_fix/css/style.css",
+		"/C/OpenServer/domains/dle.me/templates/smartmobile_fix/addcomments.tpl",
+		"/C/OpenServer/domains/dle.me/templates/smartmobile_fix/main.tpl",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/TidyHTML5/Default (Windows).sublime-keymap",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/SFTP/Default (Windows).sublime-keymap",
+		"/D/work/verstka/Radesign/zaglushka/index.html",
+		"/D/work/verstka/Radesign/zaglushka/style.css",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/D/work/verstka/Radesign/zaglushka/sftp-config.json",
+		"/C/OpenServer/domains/hello.me/style.css",
+		"/C/OpenServer/domains/hello.me/index.html",
+		"/D/temper/index.html",
+		"/D/temper/style.css",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/D/work/verstka/pdplus.ru/html/style.css",
+		"/D/work/verstka/pdplus.ru/html/index.html",
+		"/D/temp.css",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Snipt.net Snippet Fetcher/Snipt.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Default.sublime-commands",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Default/Context.sublime-menu",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/CSScomb/README.md"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".addcom",
+			".js",
+			"header",
+			"ctrl+shift+d",
+			"ctrl+d",
+			"ctrl+shift+d",
+			"ctrl+d",
+			"p {\n	margin: 0 0 18px\n}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 4946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 172.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 172.0
+	},
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 111.0,
+	"status_bar_visible": true
+}
