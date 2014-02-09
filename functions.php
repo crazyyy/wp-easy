@@ -5,31 +5,34 @@
  *  Custom functions, support, custom post types and more.
  */
 
+/* Enable styles for WP admin panel*/
 function my_admin_theme_style() {
     wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/css/admin.css');
     wp_enqueue_style('my-admin-script', get_template_directory_uri() . '/js/admin.js');
 }
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 
+// Catch first image from post and display it
+function catch_that_image() {
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i',
+    $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+// If post dont have an image - display image "noimage"
+    if(empty($first_img)){
+    $first_img = get_template_directory_uri() . '/img/noimage.jpg'; }
+    return $first_img;
+}
+
+
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
 
-function catch_that_image() {
-	global $post, $posts;
-	$first_img = '';
-	ob_start();
-	ob_end_clean();
-	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i',
-	 $post->post_content, $matches);
-	$first_img = $matches [1] [0];
-	 
-	// no image found display default image instead
-	if(empty($first_img)){
-	$first_img = get_template_directory_uri() . '/img/noimage.png';
-	}
-	return $first_img;
-}
+
 
 
 
