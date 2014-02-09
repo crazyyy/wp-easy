@@ -13,20 +13,13 @@
 			
 			<?php edit_post_link(); ?>
 			
-		</article>
-		<!-- /article -->
-	<?php endwhile; else: ?>
-		<!-- article -->
-		<article>
-			
+		<?php endwhile; else: // If 404 page error ?>
 			<h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+		<?php endif; ?>
 		</article>
 		<!-- /article -->
-	
-	<?php endif; ?>
 	</section>
 	<!-- /section -->
 	
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
