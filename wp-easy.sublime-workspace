@@ -16,11 +16,35 @@
 	"buffers":
 	[
 		{
-			"file": "style.css",
+			"file": "search.php",
 			"settings":
 			{
-				"buffer_size": 4946,
+				"buffer_size": 384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 1545,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page.php",
+			"settings":
+			{
+				"buffer_size": 730,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Git/Git.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1391,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -31,15 +55,67 @@
 		"selected_items":
 		[
 			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git q",
+				"Git: Quick Commit"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
 				"pack",
-				"Package Control: Install Package"
+				"Package Control: Remove Package"
+			],
+			[
+				"git qu",
+				"Git: Quick Commit"
+			],
+			[
+				"gut",
+				"Git: Quick Commit"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Push"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
 			],
 			[
 				"pa",
 				"Package Control: Install Package"
 			],
 			[
+				"ti",
+				"Tidy PHP"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
 				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -71,7 +147,7 @@
 				"BracketHighlighter: Toggle Global Enable"
 			]
 		],
-		"width": 392.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -88,6 +164,30 @@
 	},
 	"file_history":
 	[
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/style.css",
+		"/C/Users/Администратор/.gitconfig",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/.git/config",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/GitGutter/GitGutter.sublime-settings",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Git/Git.sublime-settings",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/page.php",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/.gitignore",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Tortoise/Tortoise.sublime-settings",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/single.php",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Tortoise/Default (Windows).sublime-keymap",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/TortoiseSVN/TortoiseSVN.sublime-settings",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/header.php",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/README.md",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/pagination.php",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/PhpTidy/PhpTidy.sublime-settings",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/User/PhpTidy.sublime-settings",
+		"/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Package Control/package_control/unicode.py",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/favicon.ico",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/SublimeText2/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Tortoise/Tortoise.sublime-settings",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/img/bg/readme.txt",
+		"/C/OpenServer/domains/wpeasy.me/wp-content/themes/wp-easy/img/readme.txt",
 		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/main.tpl",
 		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/fullstory.tpl",
 		"/C/OpenServer/domains/javabox.net/templates/smartmobile_fix/addcomments.tpl",
@@ -124,7 +224,6 @@
 		"/D/work/verstka/pdplus.ru/html/index.html",
 		"/D/temp.css",
 		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
 		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
 		"/C/Users/Администратор/AppData/Roaming/Sublime Text 2/Packages/Snipt.net Snippet Fetcher/Snipt.sublime-settings",
@@ -174,23 +273,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "style.css",
+					"file": "search.php",
 					"settings":
 					{
-						"buffer_size": 4946,
+						"buffer_size": 384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								384,
+								384
 							]
 						],
 						"settings":
@@ -242,11 +341,233 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "header.php",
+					"settings":
+					{
+						"buffer_size": 1545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								569,
+								569
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "page.php",
+					"settings":
+					{
+						"buffer_size": 730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 243.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Downloads/Dropbox/Soft/SublimeText2/Data/Packages/Git/Git.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 1391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -285,6 +606,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.git":
+	{
+		"height": 183.0
+	},
 	"output.sftp":
 	{
 		"height": 172.0
@@ -318,6 +643,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 111.0,
+	"side_bar_width": 196.0,
 	"status_bar_visible": true
 }

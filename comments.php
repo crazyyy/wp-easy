@@ -7,7 +7,7 @@
 
 <?php if (have_comments()) : ?>
 
-	<h2><?php comments_number(); ?></h2>
+	<h5><?php comments_number(); ?></h5>
 
 	<ul>
 		<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
