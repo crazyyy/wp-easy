@@ -5,15 +5,17 @@
  *  Custom functions, support, custom post types and more.
  */
 
-/* Enable styles for WP admin panel*/
-function my_admin_theme_style() {
-    wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/css/admin.css');
-    wp_enqueue_style('my-admin-script', get_template_directory_uri() . '/js/admin.js');
+//  Enable styles for WP admin panel
+//  RU: Подключение собственных шрифтов и скриптов для админки
+function wpeAdminThemeStyle() {
+    wp_enqueue_style('wpe-admin-style', get_template_directory_uri() . '/css/admin.css');
+    wp_enqueue_style('wpe-admin-script', get_template_directory_uri() . '/js/admin.js');
 }
-add_action('admin_enqueue_scripts', 'my_admin_theme_style');
+add_action('admin_enqueue_scripts', 'wpeAdminThemeStyle');
 
-// Catch first image from post and display it
-function catch_that_image() {
+//  Catch first image from post and display it
+//  RU: Выделить первую изображение из записи
+function catchFirstImage() {
     global $post, $posts;
     $first_img = '';
     ob_start();
@@ -21,21 +23,25 @@ function catch_that_image() {
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i',
     $post->post_content, $matches);
     $first_img = $matches [1] [0];
-// If post dont have an image - display image "noimage"
+//  If post dont have an image - display image "noimage"
+//  RU: Если запись не содержит изображения - показывать картинку "noimage" 
     if(empty($first_img)){
     $first_img = get_template_directory_uri() . '/img/noimage.jpg'; }
     return $first_img;
 }
 
+//  Disable auto save posts
+//  RU: Отключение автоматического сохранения записи
+//  http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
+function disableAutoSave(){
+    wp_deregister_script('autosave');
+}
+add_action( 'wp_print_scripts', 'disableAutoSave' );
+
 
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
-
-
-
-
-
 
 // Load any external files you have here
 
@@ -83,7 +89,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('wpeasy', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\
@@ -519,29 +525,6 @@ function single_result() {
 	}
 }
 
- // Как изменить стандартный шрифт WordPress редактора
- // http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
- 
- function change_editor_font(){
-	echo "<style type='text/css'>
-	#editorcontainer textarea#content {
-		font-family: Georgia, \"Times New Roman\", Times, serif;
-		font-size:16px;
-		color:#333;
-		}
-	</style>";
-}
-add_action("admin_print_styles", "change_editor_font");
-
-  // Отключение автоматического сохранения записи
- // http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
- 
- function disableAutoSave(){
-wp_deregister_script('autosave');
-}
-add_action( 'wp_print_scripts', 'disableAutoSave' );
-
-
 // хлебные крошки 	http://dimox.name/wordpress-breadcrumbs-without-a-plugin/
 // < ?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ? >
 // 
@@ -690,5 +673,7 @@ function dimox_breadcrumbs() {
 
 	}
 } // end dimox_breadcrumbs()
+
+
 
 ?>
