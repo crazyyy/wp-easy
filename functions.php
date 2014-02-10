@@ -39,10 +39,11 @@ function disableAutoSave(){
 add_action( 'wp_print_scripts', 'disableAutoSave' );
 
 /*------------------------------------*\
-	External Modules/Files
+    External Modules/Files
+    RU: Подключение внешних модулей/файлов
 \*------------------------------------*/
 //  Load styles
-//  Подключение стилей
+//  RU: Подключение стилей
 function wpeStyles()    {
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.min.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
@@ -50,12 +51,12 @@ function wpeStyles()    {
     wp_enqueue_style('wpeasy-style'); // Enqueue it!
 }
 //  Loading JS
-//  Подключение скриптов
+//  RU: Подключение скриптов
 function wpeHeaderScripts()
 {
     if (!is_admin()) {
 //  Load header scripts (header.php)
-//  Подключение скриптов в шапку (header.php)
+//  RU: Подключение скриптов в шапку (header.php)
         wp_deregister_script('jquery'); // Deregister WordPress jQuery   RU: Отключаю стандартный JQuery WordPress'а  
         wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), '1.11.0'); // Google CDN jQuery   RU: Регистрирую JQuery с хостинга Google
         wp_enqueue_script('jquery'); // Enqueue it!    RU: Подключаю его
@@ -63,7 +64,7 @@ function wpeHeaderScripts()
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
 //  Load footer scripts (footer.php)
-//  Подключение скриптов в подвал (footer.php)
+//  RU: Подключение скриптов в подвал (footer.php)
         wp_register_script('modernizr', 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', array(), '2.6.2', true); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
         
@@ -73,7 +74,7 @@ function wpeHeaderScripts()
 }
 
 //  Load conditional scripts
-//  Пример подключения стороннего шрифта дял специфической страницы
+//  RU: Пример подключения стороннего шрифта дял специфической страницы
 /*
 function wpeConditionalScripts()    {
     if (is_page('pagenamehere')) {
