@@ -1,7 +1,7 @@
 <!-- sidebar -->
 <aside class="sidebar" role="complementary">
 
-	<?php if ( is_active_sidebar(widget-area-1) ) : ?>
+	<?php if ( is_active_sidebar('widget-area-1') ) : ?>
 		<?php dynamic_sidebar( 'widget-area-1' ); ?>
 	<?php else : ?>
  
