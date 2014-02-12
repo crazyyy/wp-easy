@@ -13,7 +13,7 @@
 			
 			<?php edit_post_link(); ?>
 		<?php endwhile; else: // If 404 page error ?>
-			<h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+			<h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 		<?php endif; ?>
 		</article>
 		<!-- /article -->

@@ -3,7 +3,7 @@
 	<!-- section -->
 	<section role="main">
 	
-		<h1 class="ctitle"><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+		<h1 class="ctitle"><?php _e( 'Latest Posts', 'wpeasy' ); ?></h1>
 	
 		<?php get_template_part('loop'); ?>
 		

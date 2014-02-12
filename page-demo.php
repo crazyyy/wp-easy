@@ -28,7 +28,7 @@
 		<!-- article -->
 		<article>
 			
-			<h2 class="title"><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+			<h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 			
 		</article>
 		<!-- /article -->
