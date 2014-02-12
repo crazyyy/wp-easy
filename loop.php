@@ -24,7 +24,7 @@
 		<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
 		<!-- /post details -->
 		
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+		<?php wpeExcerpt('wpeExcerpt40'); ?>
 		
 		<?php edit_post_link(); ?>
 		

@@ -85,14 +85,36 @@ function wpeConditionalScripts()    {
 add_action('wp_print_scripts', 'wpeConditionalScripts'); // Add Conditional Page Scripts
 */
 
+/*------------------------------------*\
+	Theme Cleanup
+    RU: Отключение всякого лишнего
+\*------------------------------------*/
+//  Remove wp_head() injected Recent Comment styles
+//  RU: отключение вывод стилей комментарие в шапке
+function my_remove_recent_comments_style() {
+    global $wp_widget_factory;
+    remove_action('wp_head', array(
+        $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
+        'recent_comments_style'
+    ));
+}
 
 
 
 // Load any external files you have here
 
 /*------------------------------------*\
-	Theme Support
+    Theme Support
 \*------------------------------------*/
+
+
+
+
+
+
+
+
+
 
 if (!isset($content_width))
 {
@@ -142,11 +164,14 @@ if (function_exists('add_theme_support'))
 }
 
 /*------------------------------------*\
-	Functions
+	Theme functions
+    RU: Настройки темы
 \*------------------------------------*/
+//  Enable wordpress menu
+//  RU: Подключение трех меню WP
 
-// HTML5 head navigation
-function html5blank_nav()
+// WPE head navigation
+function wpeHeadNav()
 {
 	wp_nav_menu(
 	array(
@@ -169,12 +194,11 @@ function html5blank_nav()
 		)
 	);
 }
-// HTML5 footer navigation
-function html5extra_nav()
-{
+// WPE footer navigation
+function wpeFootNav() {
 	wp_nav_menu(
 	array(
-		'theme_location'  => 'extra-menu',
+		'theme_location'  => 'footer-menu',
 		'menu'            => '', 
 		'container'       => 'div', 
 		'container_class' => 'menu-{menu slug}-container', 
@@ -193,9 +217,8 @@ function html5extra_nav()
 		)
 	);
 }
-// HTML5 sidebar navigation
-function html5sidebar_nav()
-{
+// WPE sidebar navigation
+function wpeSideNav() {
 	wp_nav_menu(
 	array(
 		'theme_location'  => 'sidebar-menu',
@@ -217,17 +240,87 @@ function html5sidebar_nav()
 		)
 	);
 }
-
-
-// Register HTML5 Blank Navigation
-function register_html5_menu()
-{
-    register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Меню в шапке', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Меню в сайдбар', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Меню в футер', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+//  Register WPE Navigation
+//  RU: Регистрация менюшек
+function register_html5_menu() {
+    register_nav_menus(array( 
+        'header-menu' => __('Меню в шапке', 'wpeasy'), 
+        'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'), 
+        'footer-menu' => __('Меню в подвал', 'wpeasy') 
     ));
 }
+//  If Dynamic Sidebar Existsов
+//  RU: Активация динамических сайдбар
+if (function_exists('register_sidebar')) {
+    //  Define Sidebar Widget Area 1
+    //  RU: Активация первого виджета
+    register_sidebar(array(
+        'name' => __('Блок виджетов #1', 'wpeasy'),
+        'description' => __('Description for this widget-area...', 'wpeasy'),
+        'id' => 'widgetArea1',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h6>',
+        'after_title' => '</h6>'
+    ));
+    //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
+    //  RU: Если вам нужен два и больше виджетов - раскоментируйте ниже и / или добавьте ещё, по примеру
+    /*
+    register_sidebar(array(
+        'name' => __('Блок виджетов #2', 'wpeasy'),
+        'description' => __('Description for this widget-area...', 'wpeasy'),
+        'id' => 'widgetArea2',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h6>',
+        'after_title' => '</h6>'
+    ));
+    */
+}
+
+
+
+//  Custom Excerpts
+//  RU: Произвольное обрезание текста
+function wpeExcerpt20($length) {
+    return 20;
+}
+function wpeExcerpt40($length) {
+    return 40;
+}
+//  Create the Custom Excerpts callback
+//  RU: Собственная обрезка контента
+function wpeExcerpt($length_callback = '', $more_callback = '')
+{
+    global $post;
+    if (function_exists($length_callback)) {
+        add_filter('excerpt_length', $length_callback);
+    }
+    if (function_exists($more_callback)) {
+        add_filter('excerpt_more', $more_callback);
+    }
+    $output = get_the_excerpt();
+    $output = apply_filters('wptexturize', $output);
+    $output = apply_filters('convert_chars', $output);
+    $output = '<p>' . $output . '</p>';
+    echo $output;
+}
+
+//  Custom View Article link to Post
+//  RU: Добавляем "Читать дальше" к обрезанным записям
+/*
+function html5_blank_view_article($more)
+{
+    global $post;
+    return '... <!-- noindex --><a rel="nofollow" class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'wpeasy') . '</a><!-- /noindex -->';
+}
+*/
+
+
+
+
+
+
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -266,41 +359,6 @@ function add_slug_to_body_class($classes)
     return $classes;
 }
 
-// If Dynamic Sidebar Exists
-if (function_exists('register_sidebar'))
-{
-    // Define Sidebar Widget Area 1
-    register_sidebar(array(
-        'name' => __('Блок виджетов #1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-
-    // Define Sidebar Widget Area 2
-    register_sidebar(array(
-        'name' => __('Блок виджетов #2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-}
-
-// Remove wp_head() injected Recent Comment styles
-function my_remove_recent_comments_style()
-{
-    global $wp_widget_factory;
-    remove_action('wp_head', array(
-        $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
-        'recent_comments_style'
-    ));
-}
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function html5wp_pagination()
@@ -315,41 +373,7 @@ function html5wp_pagination()
     ));
 }
 
-// Custom Excerpts
-function html5wp_index($length) // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
-{
-    return 20;
-}
 
-// Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
-function html5wp_custom_post($length)
-{
-    return 40;
-}
-
-// Create the Custom Excerpts callback
-function html5wp_excerpt($length_callback = '', $more_callback = '')
-{
-    global $post;
-    if (function_exists($length_callback)) {
-        add_filter('excerpt_length', $length_callback);
-    }
-    if (function_exists($more_callback)) {
-        add_filter('excerpt_more', $more_callback);
-    }
-    $output = get_the_excerpt();
-    $output = apply_filters('wptexturize', $output);
-    $output = apply_filters('convert_chars', $output);
-    $output = '<p>' . $output . '</p>';
-    echo $output;
-}
-
-// Custom View Article link to Post
-function html5_blank_view_article($more)
-{
-    global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
-}
 
 // Remove Admin bar
 function remove_admin_bar()

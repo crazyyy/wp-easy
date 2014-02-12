@@ -1,13 +1,13 @@
 <!-- sidebar -->
 <aside class="sidebar" role="complementary">
 
-	<?php if ( is_active_sidebar('widget-area-1') ) : ?>
-		<?php dynamic_sidebar( 'widget-area-1' ); ?>
+	<?php if ( is_active_sidebar('widgetArea1') ) : ?>
+		<?php dynamic_sidebar( 'widgetArea1' ); ?>
 	<?php else : ?>
  
-		<!-- Здесь код вывода того, что необходимо... -->
+		<!-- If you want display static widget content - write code here
+		RU: Здесь код вывода того, что необходимо для статического контента виджетов -->
  
 	<?php endif; ?>
- 
 </aside>
 <!-- /sidebar -->

@@ -15,12 +15,13 @@
 			<h1 class="single-title inner-title"><?php the_title(); ?></h1>
 			
 			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+			<span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
 			<span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
 			<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
 			<!-- /post details -->
 			
-			<?php the_content(); // Dynamic Content ?>
+			<!-- Dispaly dynamic content RU: Вывод контента записей -->
+			<?php the_content(); ?>
 			
 			<?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 			
