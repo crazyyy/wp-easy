@@ -308,13 +308,13 @@ function wpeExcerpt($length_callback = '', $more_callback = '')
 
 //  Custom View Article link to Post
 //  RU: Добавляем "Читать дальше" к обрезанным записям
-/*
+
 function html5_blank_view_article($more)
 {
     global $post;
     return '... <!-- noindex --><a rel="nofollow" class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'wpeasy') . '</a><!-- /noindex -->';
 }
-*/
+
 
 
 
