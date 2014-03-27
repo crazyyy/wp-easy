@@ -35,17 +35,16 @@ body {
 	color:#444;
 }
 /* clear */
-.clear:before,
-.clear:after {
-    content:' ';
-    display:table;
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
 }
-
-.clear:after {
-    clear:both;
+.clearfix:after, .clear{
+    clear: both;
 }
-.clear {
-    *zoom:1;
+.clearfix {
+    *zoom: 1;
 }
 img {
 	max-width:100%;
