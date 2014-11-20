@@ -419,10 +419,10 @@ body {
 /* clearfix */
 .clearfix:before {
   display: table;
-  content: " "; }
+  content: ""; }
 .clearfix:after {
   display: table;
-  content: " ";
+  content: "";
   clear: both; }
 
 .clear {
