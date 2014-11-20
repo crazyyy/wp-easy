@@ -41,11 +41,11 @@ body {
 .clearfix {
   &:before {
     display: table;
-    content: ' ';
+    content: '';
   }
   &:after {
     display: table;
-    content: ' ';
+    content: '';
     clear: both;
   }
 }
